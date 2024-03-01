@@ -1,13 +1,54 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;700&family=Poppins:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*, body{
+    padding: 0;
+    margin: 0;
+    /* min-height: 100vh; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+::-webkit-scrollbar {
+    width: 0.5em;
+    height: 0.5em;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #fff;
+    border-radius: 100vw;
+    margin-block: 1em;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #828282;
+    border-radius: 100vw;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(120 100% 10% / 1);
+  }
+  
+  /* Vertical scrolling */
+  
+  .vertical-scroll {
+    display: grid;
+    gap: 0.5em;
+    grid-auto-flow: column;
+    grid-auto-columns: 75%;
+    padding: 0.5em;
+    overflow-x: scroll;
+    background: #d3fdbe;
+    border-radius: 1em;
+    position: relative;
+  }
+  
+  .vertical-scroll > div {
+    background: hsl(0 0% 90%);
+    border-radius: 1em;
+    border: 0.5em solid hsl(0 0% 60%);
+    padding: 1em;
+  }
+
+  .fc .fc-button-primary {
+    background-color: #6d6d6d !important;
+    border-color: #6d6d6d !important;
+  }
